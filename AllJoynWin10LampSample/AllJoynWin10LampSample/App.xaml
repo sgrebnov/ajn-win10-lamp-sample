@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="AllJoynWin10LampSample.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AllJoynWin10LampSample"
+    RequestedTheme="Light">
+
+</Application>

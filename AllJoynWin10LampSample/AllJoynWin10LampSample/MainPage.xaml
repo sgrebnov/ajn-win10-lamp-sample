@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="AllJoynWin10LampSample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AllJoynWin10LampSample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Padding="10,0,10,0" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35" />
+            <RowDefinition Height="65" />
+            <RowDefinition Height="65" />
+        </Grid.RowDefinitions>
+        <!--<TextBlock Grid.Row="0" FontSize="20" Text="AllJoyn Windows10 Lamp Sample"/>-->
+
+        <TextBlock Text="Power" Grid.Row="1" FontSize="16" Margin="0,22,0,43" Grid.RowSpan="2" />
+        <ToggleSwitch x:Name="PowerSwitch"  IsOn="True" OnContent="On" OffContent="Off" Grid.Row="1" 
+              Toggled="PowerSwitch_Toggled" Margin="60,13,0,12"/>
+
+        <TextBlock Text="Brightness/Яркость" Grid.Row="2" FontSize="16"/>
+        <Slider Grid.Row="2" x:Name="Brightness" Value="10" HorizontalAlignment="Left" Margin="0,20,0,0" Width="350" ValueChanged="Brightness_ValueChanged"  VerticalAlignment="Top" Maximum="100"/>
+    </Grid>
+</Page>
